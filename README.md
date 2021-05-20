@@ -1,6 +1,10 @@
 # IEX Depth of Book Historical Data (DEEP) Parser
 <br>
 
+<center>NOTE: This is an unofficial implementation.</center>
+
+<br>
+
 <ol>
 
 ## <li> Introduction <br> </li>
