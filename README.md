@@ -2,9 +2,7 @@
 <br>
 
 <center> 
-
-NOTE: This is an unofficial implementation.
-
+<b>Note: This is an unofficial implementation.</b>
 </center>
 
 <br>
