@@ -33,3 +33,4 @@
 IEX_DEEP_HISTORICAL_DATA_PARSER.code-workspace
 
 build/*
+tests/Testing/*

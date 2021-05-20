@@ -26,7 +26,7 @@ This code extracts and decodes historical data from IEX DEEP specification.
 ## <li> Components </li>
 <ol>
 <li> Extract packets from gzipped data using tshark </li> 
-<li> Decodes packets using c++ </li>
+<li> Decodes packets using C++ </li>
 </ol>
 <br>
 
@@ -43,7 +43,7 @@ Install TShark if required
 sudo apt update
 sudo apt-get install tshark
 ```
-### <li> Extract packets </li>
+### <li> Extract Packets </li>
 Run the following code to get raw payload of the pcap packets
 ```bash
 tshark -r <gz_file> -T fields -e data > <extracted_file_name>
@@ -51,7 +51,7 @@ tshark -r <gz_file> -T fields -e data > <extracted_file_name>
 </ol>
 <br>
 
-## <li> Decoding packets using C++ </li>
+## <li> Decoding Packets using C++ </li>
 <ol>
 
 ### <li> Installing CMake </li>
@@ -66,13 +66,13 @@ sudo apt update
 sudo apt-get install cmake
 ```
 
-### <li> Build parser using CMake </li>
+### <li> Build and Test Parser using CMake </li>
 ```bash
- mkdir build 
- cd build
- cmake ../ &&  cmake --build ./
+mkdir build
+cmake -S ./ -B build && cmake --build build
+cd build && ctest
 ```
-### <li> Decode payloads </li>
+### <li> Decode Payloads </li>
 Decode payloads into csv files
 ```bash
  ./iex_deep_parser <input_file> <output_file_dir>

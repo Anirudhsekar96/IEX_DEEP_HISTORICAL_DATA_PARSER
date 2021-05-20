@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.9)
 project(IEX_DEEP_HISTORICAL_DATA_PARSER VERSION 0.1.0)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -19,6 +19,8 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
+#enable_testing()
+include(CTest)
 include(GoogleTest)
 
 add_executable(messagetype_test tests/messagetype_test.cc)
