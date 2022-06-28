@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/369024717.svg)](https://zenodo.org/badge/latestdoi/369024717)
+
 # IEX Depth of Book Historical Data (DEEP) Parser
 <br>
 
@@ -146,5 +148,20 @@ ls * | parallel --retry-failed --shuf --jobs $n_jobs --delay $delay --eta --prog
 ```
 
 </ol>
+
+## <li> Citation</li>
+```
+@software{chandrasekaran_anirudh_bhardwaj_2021_6764244,
+  author       = {Chandrasekaran Anirudh Bhardwaj},
+  title        = {{Anirudhsekar96/IEX\_DEEP\_HISTORICAL\_DATA\_PARSER: 
+                   v0.1}},
+  month        = may,
+  year         = 2021,
+  publisher    = {Zenodo},
+  version      = {v0.1},
+  doi          = {10.5281/zenodo.6764244},
+  url          = {https://doi.org/10.5281/zenodo.6764244}
+}
+```
 
 </ol>
